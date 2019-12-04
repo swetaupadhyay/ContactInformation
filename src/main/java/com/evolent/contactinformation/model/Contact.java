@@ -53,7 +53,7 @@ public class Contact implements Serializable {
      */
     @PrePersist
     public void updateCreateDate() {
-        if (created == null) {
+        if (getCreated() == null) {
             created = new Date();
         }
         updateUpdatedDate();
@@ -149,6 +149,20 @@ public class Contact implements Serializable {
      */
     public void setStatus(ContactStatus status) {
         this.status = status;
+    }
+
+    /**
+     * @return the created
+     */
+    public Date getCreated() {
+        return created;
+    }
+
+    /**
+     * @return the updated
+     */
+    public Date getUpdated() {
+        return updated;
     }
 
 }

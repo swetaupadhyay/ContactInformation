@@ -10,10 +10,10 @@ import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- *
+ * This is DAO class to connect with JPA and database layer.
  * @author sweta.upadhyay
  */
 @Repository
-public interface ContactDAO extends JpaRepository<Contact, Long> {
+public interface ContactInformationDAO extends JpaRepository<Contact, Long> {
 
 }
